@@ -1,0 +1,23 @@
+create or replace procedure GET_MOVIE_INFO as
+
+  Cursor cursor is select movie.id,movie.domain,movie.title,movie.detail from movie where id>=1;
+  detail varchar2(1500);
+  id     number(10);
+  domain varchar2(50);
+  title  varchar2(200);
+  
+begin
+  for mycursor in cursor loop
+    begin
+      detail:=mycursor.detail;
+      domain:=mycursor.domain;
+      id    :=mycursor.id;
+      title :=mycursor.title;
+      
+      if instr(domain,'m1905.com',1)!=0 then
+        M1905(id,domain,title,detail);
+      
+      end if;
+    end;
+  end loop;   
+end GET_MOVIE_INFO;

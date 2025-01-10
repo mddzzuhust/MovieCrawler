@@ -1,0 +1,26 @@
+BEGIN
+	#Routine body goes here...
+  DECLARE mdetail varchar(1500);
+  DECLARE mid     int;
+  #DECLARE c      INT;
+  DECLARE mdomain varchar(50);#域名
+  DECLARE mtitle  VARCHAR(200);#标题
+  DECLARE b      INT;
+  #从movie表中提取需要的信息，mysql定义游标的固定格式
+  DECLARE cursor1 CURSOR FOR SELECT id,domain,title,detail FROM movie WHERE id>=2;
+  DECLARE continue handler for not found set b=1;
+  OPEN cursor1;
+  emp_loop:LOOP
+    fetch cursor1 into mid,mdomain,mtitle,mdetail;
+    #根据域名分别调用不同的函数或过程
+    IF(instr(mdomain,'douban.com')<>0)THEN
+      CALL movie_info(mid,mdomain,mtitle,mdetail);
+    ELSEIF(instr(mdomain,'1905.com')<>0)THEN
+      CALL M1905(mid,mdomain,mtitle,mdetail);
+    END IF;
+    IF b=1 THEN
+      LEAVE emp_loop;
+    END IF;
+   END LOOP emp_loop;
+   CLOSE cursor1;
+END

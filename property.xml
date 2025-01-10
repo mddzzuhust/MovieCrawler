@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="gbk"?>
+<!-- 配置文件针对的是客户端. 服务端未用到配置文件 -->
+<crawler>
+  <database>
+  	<!-- 数据库连接信息  -->
+    <use>false</use>
+    <!--<ip>211.69.205.20</ip>  实验室服务器IP -->
+    <ip>127.0.0.1</ip> <!-- 公司电信IP -->
+    <sid>idc</sid>
+    <user>idc</user>
+    <password>idc</password>
+  </database>
+
+  <server>
+  	<!-- 服务端 IP地址 -->
+    <!--<ip>211.69.205.20</ip>  实验室服务器IP -->
+    <ip>127.0.0.1</ip> <!-- 公司电信IP -->
+  </server>
+
+  <client>
+  	<!-- 客户端  -->
+  	<!-- 图片保存方式: 本地文件系统或者Hbase分布式数据库 -->
+  	<savedLocal>true</savedLocal>
+  	<savedHbase>false</savedHbase>
+    <!-- 抓取的媒体文件保存的根路径 -->
+    <imageSavePath>D:\CrawlerDownload</imageSavePath>
+    <!-- 初始化 URL集 -->
+    <initURLFile>initURL.txt</initURLFile>
+    <!--  是否使用Berkeley DB作为链接缓存  -->
+	<useBDB>false</useBDB>
+  </client>
+
+  <schedule>
+  	<!-- 
+  		调度时间,单位:秒 .该值为爬行主机与其他爬行主机通信的间隔时间,
+		同时也是系统向用户显示状态信息的更新间隔时间
+	-->
+    <time>60</time>
+  </schedule>
+
+  <Timer>
+   <!-- 是否使用定时器-->
+   <useTiming>false</useTiming>
+   <!-- 设定定时器开始时间,格式 yyyy/MM/dd hh:mm:ss -->
+   <startTime>2014/07/24 00:00:00</startTime>
+   <!-- 设定爬虫执行时间  单位：秒 -->
+   <runTime>8</runTime>
+   <!-- 设定任务执行周期  单位：秒 -->
+   <periodTime>2592000</periodTime>
+  </Timer>
+	
+  <thread>
+  	<!-- 爬行线程的数量.系统将启动如下数目的线程数并行爬行-->
+  	<number>1</number>
+  </thread>
+
+  <connect>
+  	<!-- 连接超时时间(毫秒),超过该时间仍不能获取连接的URL将被丢弃 -->
+    <timeout>50000</timeout>
+  </connect>
+
+  <read>
+  	<!-- 读取超时时间(毫秒),超过该时间仍不能读取数据的URL将被丢弃 -->
+    <timeout>50000</timeout>
+  </read>
+
+  <host>
+  	<!-- 
+		是否限制爬行主机域名.可以指定允许爬行的主机域名和拒绝爬行的主机域名
+		若此处配置的域名是爬虫抓取的URL地址中主机域名部分的后缀,则匹配成功
+		如果同一主机域名同时处在允许爬行和拒绝爬的域名配置中,拒绝爬行该域名
+		若此处设置为false,则不再检测域名配置
+ 	-->
+  	<check>true</check>
+  	<!-- 
+		允许爬行的主机域名.若<allow-domain></allow-domain>不为空,所有
+		不匹配设置域名的URL都将被丢弃,系统只爬取匹配以下设置域名的URL地址
+		下例设置只允许爬行tuku.com和hust.edu.cn域名中的URL地址
+	-->
+	<allow-domain>douban.com</allow-domain> 
+	<allow-domain>m1905.com</allow-domain>
+	<allow-domain>1905.com</allow-domain>
+    <!-- 
+		拒绝爬行的主机域名.所有匹配设置域名的URL都将被丢弃.
+		下例设置拒绝爬行所有alibaba.com域名的地址 
+	-->
+	<reject-domain>youku.com</reject-domain>
+	<reject-domain>tudou.com</reject-domain>
+	<reject-domain>ku6.com</reject-domain>
+  </host>
+
+  <proxy>
+  	<!-- 是否使用代理爬行 -->
+  	<use>false</use>
+  </proxy>
+  
+  <increment>
+  	<!-- 是否继续上次爬行.可能因为某种原因导致上次爬行中断.可以选择是否继续 -->
+    <value>false</value>
+  </increment>
+  
+  <download>
+    <!-- 最大图像大小(byte).-1表示不限制 -->
+    <maxImageSize>-1</maxImageSize>
+    <!-- 最小图像大小(byte).默认值5KB -->
+    <minImageSize>5120</minImageSize>
+    
+    <!-- 单个文件夹最多存放的文件数量.默认值2000个 -->
+    <maxFilesPerDir>2000</maxFilesPerDir>
+  </download>
+
+  <image>
+  	<!-- 要爬行的图像类型,未列出的图像类型均不抓取-->
+    <type>jpg</type>
+    <type>png</type>
+    <!-- 以下不爬行
+    <type>jpeg</type>
+    <type>gif</type>
+    <type>bmp</type>
+    <type>jpe</type>
+    <type>jfif</type>
+    <type>bm</type>
+    -->
+  </image>
+
+</crawler>

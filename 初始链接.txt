@@ -1,0 +1,10 @@
+http://www.1905.com/mdb/film/list/year-2014/
+http://www.1905.com/mdb/film/soon/list/
+http://www.1905.com/mdb/film/newfilm/
+http://www.1905.com/mdb/film/hot/list/
+http://www.1905.com/mdb/film/list/
+
+http://movie.douban.com/coming
+http://movie.douban.com/nowplaying/
+http://movie.douban.com/category/#search/era/2014
+http://movie.douban.com/category/#search/era/2013

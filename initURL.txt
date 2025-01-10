@@ -1,0 +1,5 @@
+http://movie.douban.com/coming
+http://movie.douban.com/nowplaying/
+http://movie.douban.com/category/#search/era/2015
+http://movie.douban.com/category/#search/era/2014
+http://movie.douban.com/category/#search/era/2013

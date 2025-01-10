@@ -1,0 +1,56 @@
+﻿create or replace procedure m1905(id in number, domain in varchar2, title in varchar2, detail in varchar2) as
+  director varchar2(300);         --电影导演
+  major_actor varchar2(300);     --电影主演
+  category varchar2(50);          --电影类型
+  location varchar2(50);         --电影产地
+  screened_time varchar2(200);     --电影上映时间
+  temp   Integer;
+begin
+  
+  temp := instr(detail,'导演',1);             --获取电影导演的名称
+  if temp>0 then
+    director:=substr(detail,temp+3,instr(detail,'&nbsp',temp+3)-temp-3);
+    dbms_output.put_line(director);
+  else
+    director:=null;
+  end if;
+    
+  temp := instr(detail,'主演',1);           --获取电影主演的名称
+  if temp>0 then
+    major_actor:=substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-8);
+    dbms_output.put_line(major_actor);
+  else
+    major_actor:=null;
+  end if;
+ 
+  temp := instr(detail,'类型',1);          --获取电影的类型
+  if temp>0 then
+    category:=substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-4);
+    dbms_output.put_line(category);
+  else
+    category:=null;
+  end if;
+  
+  temp := instr(detail,'地区',1);      --获取电影的产地
+  if temp>0 then
+    location:=substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-4);    
+    dbms_output.put_line(location);
+  else
+    location:=null;
+  end if;
+  
+  temp := instr(detail,'上映日期',1);   --获取电影的上映时间
+  if temp>0 then
+    screened_time:=substr(detail,temp+5,instr(detail,chr(10),temp+3)-temp-4);
+    dbms_output.put_line(screened_time);
+  else
+    screened_time:=null;
+  end if;
+  
+  insert into movieinfo(id,domain,title,director,major_actor,category,location,screened_time) values(id,domain,title,director,major_actor,category,location,screened_time); 
+
+exception
+  --异常处理
+  when others then
+    dbms_output.put_line(id);
+end m1905;

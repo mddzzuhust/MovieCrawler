@@ -1,0 +1,73 @@
+create sequence seq_movieid
+minvalue 1
+start with 1
+increment by 1;
+
+create table movie
+(
+id      number(10) primary key,
+url  varchar2(500) not null,
+domain  varchar2(50) not null,
+crawlerTime   date not null,
+modifyTime  date not null,
+title varchar2(200),
+score  varchar2(200),
+detail  varchar2(1500),
+abstract1 varchar2(4000),
+abstract2 long
+);
+
+
+create table movieimage
+(
+ id  number(10) primary key,
+ imgName           varchar2(256) not null unique,
+ imgUrl             varchar2(512) not null,
+ imgType           varchar2(5) not null,
+ physicsPath         varchar2(256) not null,
+ cover       varchar(5) not null,
+ movie_id  number(10) not null
+);
+create sequence seq_movie_image_id
+minvalue 1
+start with 1
+increment by 1;
+
+create table movievideo
+(
+ id number(10) primary key,
+ videoUrl       varchar2(256) not null,
+ movie_id number(10) not null
+);
+create sequence seq_movie_video_id
+minvalue 1
+start with 1
+increment by 1;
+
+create table movieinfo_M1905
+(
+id number(10) primary key,
+domain varchar2(50),
+title varchar2(200),
+director varchar2(200),
+major_actor varchar2(1000),
+category varchar2(1000),
+location varchar2(1000),
+screened_time varchar2(200)
+);
+
+create table movieinfo_DOUBAN
+(
+id number(10) primary key,
+domain varchar2(50),
+title varchar2(200),
+director varchar2(500),
+writer varchar2(500),
+major_actor varchar2(1000),
+category varchar2(500),
+location varchar2(500),
+languages varchar2(500),
+screened_time varchar2(500),
+length_time varchar2(500)
+);
+

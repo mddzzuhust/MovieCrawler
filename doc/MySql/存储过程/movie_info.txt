@@ -1,0 +1,46 @@
+BEGIN
+	#Routine body goes here...
+  DECLARE temp INT;
+  DECLARE director VARCHAR(500);
+  DECLARE major_actor VARCHAR(1000);
+  DECLARE category   VARCHAR(500);
+  DECLARE location   VARCHAR(500);
+  DECLARE screened_time VARCHAR(500); 
+  #提取“导演”的信息
+  SET temp=instr(detail,'导演');
+  IF(temp>0) THEN
+    SET director=SUBSTR(detail,temp+3,LOCATE(CHAR(10),detail,temp+3)-temp-3);
+  ELSE
+    SET director=null;
+  END IF;
+  #提取“主演”的信息
+  SET temp=instr(detail,'主演');
+  IF(temp>0) THEN
+    SET major_actor=SUBSTR(detail,temp+3,LOCATE(CHAR(10),detail,temp+3)-temp-3);
+  ELSE
+    SET major_actor=null;
+  END IF;
+  #提取“类型”的信息
+  SET temp=instr(detail,'类型');
+  IF(temp>0) THEN
+    SET category=SUBSTR(detail,temp+3,LOCATE(CHAR(10),detail,temp+3)-temp-3);
+  ELSE
+    SET category=null;
+  END IF;
+  #提取“制片国家”的信息
+  SET temp=instr(detail,'制片国家');
+  IF(temp>0) THEN
+    SET location=SUBSTR(detail,temp+8,LOCATE(CHAR(10),detail,temp+8)-temp-8);
+  ELSE
+    SET location=null;
+  END IF;
+  #提取“上映日趋”的信息
+  SET temp=instr(detail,'上映日期');
+  IF(temp>0) THEN
+    SET screened_time=SUBSTR(detail,temp+5,LOCATE(CHAR(10),detail,temp+5)-temp-5);
+  ELSE
+    SET screened_time=null;
+  END IF;
+  #把需要的信息插入到movieinfo中
+  INSERT INTO movieinfo values(id,domain,title,director,major_actor,category,location,screened_time);
+END

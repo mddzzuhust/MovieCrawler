@@ -1,0 +1,62 @@
+来自 搜索技术博客－淘宝的两篇博文
+《定向抓取漫谈》：http://www.searchtb.com/2011/01/an-introduction-to-crawler.html
+涉及下面的问题一四五六七八九。
+
+《快速构建实时抓取集群》：http://www.searchtb.com/2011/07/%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E5%AE%9E%E6%97%B6%E6%8A%93%E5%8F%96%E9%9B%86%E7%BE%A4.html?spm=0.0.0.0.sPCFcA
+涉及下面的问题二。
+
+一、网页解析（抽取策略）
+难点：必须模拟Ajax发送请求获取到数据
+
+Tika
+Rhino js开源解析器 http://blog.csdn.net/ycyangcai/article/details/6452143
+SpiderMonkey是第一款最早面世的JavaScript引擎,使用C/C++编写(Firefox)
+V8是一个由美国Google开发的开源JavaScript引擎，C++，用于Google Chrome中
+
+HtmlUnit（Web测试工具，能模拟浏览器访问网页）
+jsoup
+webkit(QtWebkit,python版。spynner)
+Cobra
+phantomjs
+
+http://bbs.csdn.net/topics/390040684?page=2
+这不是个简单的事情，楼主感兴趣可以去试试
+qt jambi加QtWebKit 或者还给你找到一个WebKit for SWT
+或者也可以试试JavaFX好像带一个webview
+http://docs.oracle.com/javafx/2/webview/jfxpub-webview.htm
+
+JavascriptEngine
+用selenium webdriver 可以实现 或者PhantomJS
+
+http://www.oschina.net/question/780660_105263(不够详细)
+rhino+Envjs 或 Lobo
+
+二、缓存数据库。之前用Berkeley DB做过了，但删除链接得一条一条地删。
+可以尝试Redis或memcached等。
+参见：
+Redis的维基百科（提到多种内存数据库）：http://zh.wikipedia.org/wiki/Redis
+淘宝博客：http://www.searchtb.com/2011/07/%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E5%AE%9E%E6%97%B6%E6%8A%93%E5%8F%96%E9%9B%86%E7%BE%A4.html?spm=0.0.0.0.sPCFcA
+
+三、通过商品id自增来爬行(1.完全；2.部分)
+
+四、更新与检测页面过期分离（目前是在一起的。首先要研究有没有必要分离，以及检测页面过期的高效方法）
+
+五、通过优先级对网页做区分，目的是更快得处理商品页面（目前未区分，可尝试优先级队列）
+
+六、抓取频率，即要合理地去爬取一个网站（并发量过大，访问过频繁，会大量占用网站资源，从而面临封杀的危险）。
+这里还涉及robots.txt的处理。有的网站在这里设置爬虫的访问频率。(豆瓣电影网站如果大规模快速爬行会被封杀，理想的访问频率是5s一次)
+
+七、更新策略
+
+八、爬取策略
+1. 正则表达式过滤无用子域名(目前是字符串匹配。需要做效率对比)
+2. 网页上面的商品类别区分（包、衣服、鞋等。目前只做了包的）下面摘自博文。
+“网页的文本特征来确定；不过要复杂得多了，一般需要一定数量已知页面的训练集合，然后提取页面的文本特征，
+然后通过向量空间模型或者其其他基于主题词提取的模型计算目标网页和训练集网页的距离，决定是否是目标网页。”
+
+九、DNS解析模块
+“网页数量很多的时候，我们需要一个本地的DNS解析模块来维护domain到IP的映射”
+
+十、研究其他的爬虫（具体可参见毕业论文或通过搜索引擎查找）
+除了已知的一些比较知名的爬虫外，在GitHub上也有很多，都有源码。一些非Java写的也值得研究，Python写的爬虫也很多。
+

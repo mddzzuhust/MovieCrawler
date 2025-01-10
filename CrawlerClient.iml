@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/lib/classes12.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/activation-1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/aopalliance-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/asm-3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/avro-1.5.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-beanutils-1.7.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-beanutils-core-1.8.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-cli-1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-codec-1.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-collections-3.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-compress-1.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-configuration-1.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-daemon-1.0.13.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-digester-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-el-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-httpclient-3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-io-2.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-lang-2.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-logging-1.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-math-2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/commons-net-3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/core-3.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/findbugs-annotations-1.3.9-1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/gmbal-api-only-3.0.0-b023.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/grizzly-framework-2.1.1-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/grizzly-framework-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/grizzly-http-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/grizzly-http-server-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/grizzly-http-servlet-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/grizzly-rcm-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/guava-12.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/guice-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/guice-servlet-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-annotations-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-auth-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-client-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-common-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-hdfs-2.2.0-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-hdfs-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-app-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-common-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-core-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-jobclient-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-shuffle-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-api-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-client-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-common-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-server-common-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-server-nodemanager-2.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-client-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-common-0.96.0-hadoop2-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-common-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-examples-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-hadoop-compat-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-hadoop2-compat-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-it-0.96.0-hadoop2-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-it-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-prefix-tree-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-protocol-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-server-0.96.0-hadoop2-tests.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-server-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-shell-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-testing-util-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/hbase-thrift-0.96.0-hadoop2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/high-scale-lib-1.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/htrace-core-2.01.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/httpclient-4.1.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/httpcore-4.1.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jackson-core-asl-1.8.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jackson-jaxrs-1.8.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jackson-mapper-asl-1.8.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jackson-xc-1.8.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jamon-runtime-2.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jasper-compiler-5.5.23.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jasper-runtime-5.5.23.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/javax.inject-1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/javax.servlet-3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jaxb-api-2.2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jaxb-impl-2.2.3-1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-client-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-core-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-grizzly2-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-guice-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-json-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-server-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-test-framework-core-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jersey-test-framework-grizzly2-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jets3t-0.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jettison-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jetty-6.1.26.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jetty-sslengine-6.1.26.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jetty-util-6.1.26.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jruby-complete-1.6.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jsch-0.1.42.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jsp-2.1-6.1.14.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jsp-api-2.1-6.1.14.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jsp-api-2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/jsr305-1.3.9.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/junit-4.11.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/libthrift-0.9.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/log4j-1.2.17.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/management-api-3.0.0-b012.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/metrics-core-2.1.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/netty-3.6.6.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/paranamer-2.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/protobuf-java-2.5.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/servlet-api-2.5-6.1.14.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/servlet-api-2.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/slf4j-api-1.6.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/slf4j-log4j12-1.6.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/snappy-java-1.0.3.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/stax-api-1.0.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/xmlenc-0.52.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/xz-1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHbase/zookeeper-3.4.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libBDB/je-5.0.103.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/commons-logging-1.0.4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/jdom.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/log4j-1.2.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHtmlParser/htmllexer.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libHtmlParser/htmlparser.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libJDOpenAPI/jackson-core-asl-1.8.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libJDOpenAPI/jackson-mapper-asl-1.8.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/libJDOpenAPI/open-api-sdk-2.0.jar!/" />
+    <libelement value="file://F:/JAR/mysql-connector-java-5.0.8-bin.jar" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="classes12.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/classes12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activation-1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="aopalliance-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/aopalliance-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="asm-3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/asm-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="avro-1.5.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/avro-1.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-beanutils-1.7.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-beanutils-1.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-beanutils-core-1.8.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-beanutils-core-1.8.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-cli-1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-cli-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-codec-1.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-collections-3.2.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-collections-3.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-compress-1.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-compress-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-configuration-1.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-configuration-1.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-daemon-1.0.13.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-daemon-1.0.13.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-digester-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-digester-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-el-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-el-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-httpclient-3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-httpclient-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-io-2.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-io-2.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-lang-2.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-lang-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-logging-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-math-2.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-math-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-net-3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/commons-net-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="core-3.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/core-3.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="findbugs-annotations-1.3.9-1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/findbugs-annotations-1.3.9-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gmbal-api-only-3.0.0-b023.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/gmbal-api-only-3.0.0-b023.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="grizzly-framework-2.1.1-tests.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/grizzly-framework-2.1.1-tests.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="grizzly-framework-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/grizzly-framework-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="grizzly-http-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/grizzly-http-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="grizzly-http-server-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/grizzly-http-server-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="grizzly-http-servlet-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/grizzly-http-servlet-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="grizzly-rcm-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/grizzly-rcm-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="guava-12.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/guava-12.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="guice-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/guice-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="guice-servlet-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/guice-servlet-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-annotations-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-annotations-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-auth-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-auth-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-client-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-client-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-common-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-common-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-hdfs-2.2.0-tests.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-hdfs-2.2.0-tests.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-hdfs-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-hdfs-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-mapreduce-client-app-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-app-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-mapreduce-client-common-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-common-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-mapreduce-client-core-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-core-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-mapreduce-client-jobclient-2.2.0-tests.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-jobclient-2.2.0-tests.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-mapreduce-client-jobclient-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-jobclient-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-mapreduce-client-shuffle-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-mapreduce-client-shuffle-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-yarn-api-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-api-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-yarn-client-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-client-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-yarn-common-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-common-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-yarn-server-common-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-server-common-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hadoop-yarn-server-nodemanager-2.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hadoop-yarn-server-nodemanager-2.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-client-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-client-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-common-0.96.0-hadoop2-tests.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-common-0.96.0-hadoop2-tests.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-common-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-common-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-examples-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-examples-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-hadoop-compat-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-hadoop-compat-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-hadoop2-compat-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-hadoop2-compat-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-it-0.96.0-hadoop2-tests.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-it-0.96.0-hadoop2-tests.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-it-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-it-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-prefix-tree-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-prefix-tree-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-protocol-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-protocol-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-server-0.96.0-hadoop2-tests.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-server-0.96.0-hadoop2-tests.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-server-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-server-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-shell-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-shell-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-testing-util-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-testing-util-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hbase-thrift-0.96.0-hadoop2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/hbase-thrift-0.96.0-hadoop2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="high-scale-lib-1.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/high-scale-lib-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="htrace-core-2.01.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/htrace-core-2.01.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpclient-4.1.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/httpclient-4.1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="httpcore-4.1.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/httpcore-4.1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-core-asl-1.8.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jackson-core-asl-1.8.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-jaxrs-1.8.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jackson-jaxrs-1.8.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-mapper-asl-1.8.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jackson-mapper-asl-1.8.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-xc-1.8.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jackson-xc-1.8.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jamon-runtime-2.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jamon-runtime-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jasper-compiler-5.5.23.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jasper-compiler-5.5.23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jasper-runtime-5.5.23.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jasper-runtime-5.5.23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.inject-1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/javax.inject-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.servlet-3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/javax.servlet-3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxb-api-2.2.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jaxb-api-2.2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxb-impl-2.2.3-1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jaxb-impl-2.2.3-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-client-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-client-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-core-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-core-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-grizzly2-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-grizzly2-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-guice-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-guice-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-json-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-json-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-server-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-server-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-test-framework-core-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-test-framework-core-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jersey-test-framework-grizzly2-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jersey-test-framework-grizzly2-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jets3t-0.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jets3t-0.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jettison-1.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jettison-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-6.1.26.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jetty-6.1.26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-sslengine-6.1.26.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jetty-sslengine-6.1.26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jetty-util-6.1.26.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jetty-util-6.1.26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jruby-complete-1.6.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jruby-complete-1.6.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsch-0.1.42.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jsch-0.1.42.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsp-2.1-6.1.14.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jsp-2.1-6.1.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsp-api-2.1-6.1.14.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jsp-api-2.1-6.1.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsp-api-2.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jsp-api-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsr305-1.3.9.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/jsr305-1.3.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="junit-4.11.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/junit-4.11.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="libthrift-0.9.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/libthrift-0.9.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="log4j-1.2.17.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/log4j-1.2.17.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="management-api-3.0.0-b012.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/management-api-3.0.0-b012.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="metrics-core-2.1.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/metrics-core-2.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="netty-3.6.6.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/netty-3.6.6.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="paranamer-2.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/paranamer-2.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="protobuf-java-2.5.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/protobuf-java-2.5.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="servlet-api-2.5-6.1.14.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/servlet-api-2.5-6.1.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="servlet-api-2.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/servlet-api-2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slf4j-api-1.6.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/slf4j-api-1.6.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slf4j-log4j12-1.6.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/slf4j-log4j12-1.6.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="snappy-java-1.0.3.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/snappy-java-1.0.3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="stax-api-1.0.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/stax-api-1.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xmlenc-0.52.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/xmlenc-0.52.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="xz-1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/xz-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="zookeeper-3.4.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHbase/zookeeper-3.4.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="je-5.0.103.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libBDB/je-5.0.103.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-logging-1.0.4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/commons-logging-1.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jdom.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/jdom.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="log4j-1.2.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/log4j-1.2.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="htmllexer.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHtmlParser/htmllexer.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="htmlparser.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libHtmlParser/htmlparser.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-core-asl-1.8.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libJDOpenAPI/jackson-core-asl-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-mapper-asl-1.8.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libJDOpenAPI/jackson-mapper-asl-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="open-api-sdk-2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/libJDOpenAPI/open-api-sdk-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="mysql-connector-java-5.0.8-bin.jar">
+        <CLASSES>
+          <root url="file://F:/JAR/mysql-connector-java-5.0.8-bin.jar" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

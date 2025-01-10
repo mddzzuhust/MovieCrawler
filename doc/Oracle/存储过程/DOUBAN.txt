@@ -1,0 +1,85 @@
+create or replace procedure DouBan(id in number,domain in varchar2, title in varchar2,detail in varchar2) is
+  director varchar2(500);    --电影导演
+  writer   varchar2(500);    --电影编剧
+  major_actor varchar2(1000);  --电影主演
+  category varchar2(500);     --电影类型
+  location varchar2(500);    --电影产地
+  languages varchar2(500);   --语言
+  screened_time varchar2(500);     --电影上映时间
+  length_time  varchar2(500);   --电影片长
+  temp  Integer;
+begin
+  temp := instr(detail,'导演',1);
+  if temp>0 then
+    director := substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-3);
+   -- dbms_output.put_line(director);
+  else
+    director:=null;
+  end if;
+  
+  temp := instr(detail,'编剧',1);
+  if temp>0 then
+    writer := substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-3);
+    --dbms_output.put_line(writer);
+  else
+    writer:=null;
+  end if;
+  
+  temp := instr(detail,'主演',1);
+  if temp>0 then
+    major_actor := substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-3);
+   -- dbms_output.put_line(major_actor);
+  else
+    major_actor:=null;
+  end if;
+  
+  temp := instr(detail,'类型',1);
+  if temp>0 then
+    category := substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-3);
+   --- dbms_output.put_line(category);
+  else
+    category:=null;
+  end if; 
+  
+  temp := instr(detail,'制片国家',1);
+  if temp>0 then
+    location := substr(detail,temp+8,instr(detail,chr(10),temp+8)-temp-8);
+   -- dbms_output.put_line(location);
+  else
+    location:=null;
+  end if; 
+  
+  temp := instr(detail,'语言',1);
+  if temp>0 then
+    languages := substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-3);
+  --  dbms_output.put_line(languages);
+  else
+    languages:=null;
+  end if; 
+  
+  temp := instr(detail,'上映日期',1);
+  if temp>0 then
+    screened_time := substr(detail,temp+5,instr(detail,chr(10),temp+5)-temp-5);
+ --   dbms_output.put_line(screened_time);
+  else
+    screened_time:=null;
+  end if; 
+  
+  temp := instr(detail,'片长',1);
+  if temp>0 then
+    length_time := substr(detail,temp+3,instr(detail,chr(10),temp+3)-temp-3);
+   -- dbms_output.put_line(title);
+  --  dbms_output.put_line(length_time);
+  else
+    length_time:=null;
+  end if; 
+    
+  insert into movieinfo_douban values(id,domain,title,director,writer,major_actor,category,location,languages,screened_time,length_time);
+  --异常处理
+  exception
+  when others then
+  --  insert into procedure_error
+   -- values(id);
+   dbms_output.put_line(id);
+    commit;
+end DouBan;
